@@ -11,6 +11,5 @@ Encoding: UTF-8
 LazyData: true
 URL: https://noaa-feat.github.io/FTRpack/
 Depends:
-    RDCOMClient
 Imports:
     readxl
