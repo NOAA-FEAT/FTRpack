@@ -1,0 +1,37 @@
+---
+output: 
+  md_document:
+    variant: gfm
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# pkgdown template <img src="man/figures/logo.png" align="right" style="padding: 10px"/>
+
+
+
+This is a template for a FTRPack GitHub repository, R package, and pkgdown website. It will have a NMFS palette, appropriate license and disclaimer, and a NMFS footer with logo.  It has GitHub Actions that will automatically rebuild the site whenever the files are changed.  The instructions will use the **usethis** and **pkgdown** packages. So install those.
+
+**pkgdown** uses `Readme.md` but to pull in the Disclaimer and footer
+from FIT, which migh change in the future, you need a Rmd file. When you update the `Readme.Rmd` file,
+**you need to remember to knit the file** to update `Readme.md`. You could make a GitHub Action to do this.
+
+<!-- Do not edit below. This adds the Disclaimer and NMFS footer. -->
+
+****
+
+```{r add-disclaimer, echo=FALSE, results='asis'}
+url <- "https://raw.githubusercontent.com/nmfs-fish-tools/Resources/master/Disclaimer.md"
+childtext <- readLines(url)
+cat(childtext, sep="\n")
+```
+
+****
+
+```{r footer, echo=FALSE, results='asis'}
+url <- "https://raw.githubusercontent.com/nmfs-fish-tools/Resources/master/footer.md" 
+childtext <- readLines(url)
+cat(childtext, sep="\n")
+```
+
+
