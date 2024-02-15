@@ -3,7 +3,7 @@
 # pkgdown template <img src="man/figures/logo.png" align="right" style="padding: 10px"/>
 
 This is a template for a FTRPack GitHub repository, R package, and
-pkgdown website. It will have a NMFS palette, appropriate license and
+pkgdown website. It has a NMFS palette, appropriate license and
 disclaimer, and a NMFS footer with logo. It has GitHub Actions that will
 automatically rebuild the site whenever the files are changed. The
 instructions will use the **usethis** and **pkgdown** packages. So
