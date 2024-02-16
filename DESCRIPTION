@@ -1,12 +1,12 @@
 Package: FTRpack
 Type: Package
-Title: What the Package Does (Title Case)
+Title: updated FEATR package for dealing with historic time series acoustics data and exports
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Rebecca Thomas
+Maintainer: Rebecca Thomas <Rebecca.Thomas@noaa.gov>
+Description: A place for handy scripts and tools when dealing with directories of historic data.
+    Also has tools for historical data checking.
+License: MIT License
 Encoding: UTF-8
 LazyData: true
 URL: https://noaa-feat.github.io/FTRpack/
