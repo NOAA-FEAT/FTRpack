@@ -17,6 +17,7 @@
 #'
 #' @export
 
+#put subdirectory into DirNameFile and not have var?
 read_EV_exports<-function(var, SurveyName, DirNameFile,database=1,exportloc=1,...){
 
 DirTable <- readxl::read_excel(DirNameFile)  #load in directories/paths/ltocations
