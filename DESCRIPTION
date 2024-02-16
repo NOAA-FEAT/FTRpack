@@ -12,4 +12,6 @@ LazyData: true
 URL: https://noaa-feat.github.io/FTRpack/
 Depends:
 Imports:
-    readxl
+    readxl,
+    readr
+RoxygenNote: 7.2.3
