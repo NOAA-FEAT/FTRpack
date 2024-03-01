@@ -13,5 +13,6 @@ URL: https://noaa-feat.github.io/FTRpack/
 Depends:
 Imports:
     readxl,
-    readr
+    readr, 
+    dplyr
 RoxygenNote: 7.2.3
