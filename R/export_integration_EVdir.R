@@ -98,6 +98,9 @@ export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefi
     for(v in 1:nrow(vars)){
       #Obj <- EVfile[["Variables"]]  #reset this, gets unset in BiomassParameter setting
       var <- vars$variables[v]
+      if (is.null(Obj$FindByName(var))==TRUE){
+           var<-paste0(var,' (1)')  #try adding (1) to the variable if it doesn't work the first time
+      }
       varac <- Obj$FindByName(var)$AsVariableAcoustic()
       Obj_propC<-varac[['Properties']][['Calibration']]
       freqL<-Obj_propC$Get('Frequency',1)  #get the frequency from the calibration properties
