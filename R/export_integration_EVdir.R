@@ -1,4 +1,4 @@
-#'export_integration_EV
+#'export_integration_EVdir
 #'
 #' @description function to export integration from variables in a set of EV files.
 #' There are two excel files for inputs (paths, parameters to export).  The exports
@@ -7,21 +7,24 @@
 #'
 #' @param SurveyName name of survey as in excel file
 #' @param DirNameFile excel file name of paths
-#' @param variables - variables to read in (subdirectories need to be named as variables)
+#' @param variables - variables to export (will name subdirectories with variables)
 #' @param paramnamefile optional excel file name of parameters to export or not export.
 #' The column ToExport is parameters to export.  The column NoExport is parameters to not export
 #' @param ni is an optional argument for which file to start with (default ni=1 is the first file).
 #' This defaults to 1 (all EV files)
 #' @param gdepth is an optional argument for the cell depth.  gdepth defaults to 10 m
 #' @param database is an optional argument for export format.  Default is database (1).  Spreadsheet =0
+#' @param sheet is an optional argument to denote which sheet of the DirNameFile
+#' want to use. This defaults to the first sheet if not set.
+
 #' @export
-export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefile=NA,ni=1,gdepth=10,database=1,...) {
+export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefile=NA,ni=1,gdepth=10,database=1,sheet,...) {
 
   ###############################################
   #----------------  INPUT  --------------------#
   ###############################################
 
-  DirTable <- readxl::read_excel(DirNameFile)
+  DirTable <- readxl::read_excel(DirNameFile,sheet)
   DirTableSurvey<- subset(DirTable, Survey == SurveyName)
   DirTableSurvey[] <- lapply(DirTableSurvey, function(x) if(is.factor(x)) factor(x) else x)  #to ensure dataframe actually removed other variables in subset
 
