@@ -7,7 +7,7 @@
 #'
 #' @param SurveyName name of survey as in excel file
 #' @param DirNameFile excel file name of paths
-#' @param variables - variables to export (will name subdirectories with variables)
+#' @param variables - variables to export
 #' @param paramnamefile optional excel file name of parameters to export or not export.
 #' The column ToExport is parameters to export.  The column NoExport is parameters to not export
 #' @param ni is an optional argument for which file to start with (default ni=1 is the first file).
@@ -40,20 +40,20 @@ export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefi
   suppressWarnings(dir.create(file.path(CONV_export)))
 
   vars <- data.frame(variables,stringsAsFactors = FALSE)
-  for(v in 1:nrow(vars)){
-    var <- vars$variables[v]
-    suppressWarnings(dir.create(file.path(CONV_export,var)))
-  }
+  # for(v in 1:nrow(vars)){
+  #   var <- vars$variables[v]
+  #   suppressWarnings(dir.create(file.path(CONV_export,var)))
+  # }
 
 
   #list the EV files to integrate
 
   EVfile.list <- list.files(file.path(CONV_EV), pattern = ".EV")
 
-  # create folder in Exports for each variable
-  for(f in variables){
-    suppressWarnings(dir.create(file.path(CONV_export, f)))
-  }
+  # # create folder in Exports for each variable
+  # for(f in variables){
+  #   suppressWarnings(dir.create(file.path(CONV_export, f)))
+  # }
 
   # Loop through EV files
   nfiles=length(EVfile.list)  #number of EV files
