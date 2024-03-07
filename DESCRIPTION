@@ -14,5 +14,6 @@ Depends:
 Imports:
     readxl,
     readr, 
-    dplyr
+    dplyr,
+    janitor
 RoxygenNote: 7.2.3
