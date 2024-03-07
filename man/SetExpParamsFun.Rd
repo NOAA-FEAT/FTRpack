@@ -2,15 +2,17 @@
 % Please edit documentation in R/SetExpParamsFun.R
 \name{SetExpParamsFun}
 \alias{SetExpParamsFun}
-\title{SetExpParamsFun - function to set the export parameters in Echoview given an 
+\title{SetExpParamsFun - function to set the export parameters in Echoview given an
 Echoview export object}
 \usage{
 SetExpParamsFun(Obj_ExpVar, ToExport, NoExport)
 }
 \arguments{
-\item{Obj_ExpVar-}{an Evfile export object of the form EVfile[['Properties']][['Export']][['Variables']]}
+\item{Obj_ExpVar-}{an Evfile export object of the form EVfile[['Properties']][['Export']][['Variables']]
+\dontrun{
+}}
 }
 \description{
-Function to take an EvFile Export object and set the export parameters within it. 
+Function to take an EvFile Export object and set the export parameters within it.
 Parameters to export come in as ToExport. Parameters not to export come in as NoExport
 }
