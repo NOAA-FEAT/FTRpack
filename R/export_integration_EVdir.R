@@ -123,7 +123,7 @@ export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefi
       Obj_propD[['MinimumThreshold']]<--69
 
       # export by cells
-      exportcells <- file.path(CONV_export, var, paste(EvName, freq, "0.5nmi_10m_cells.csv", sep="_"))
+      exportcells <- file.path(CONV_export, paste(EvName, freq, "0.5nmi_10m_cells.csv", sep="_"))
       varac$ExportIntegrationByRegionsByCellsAll(exportcells)
 
       # Set analysis grid and exclude lines on Sv data back to original values
