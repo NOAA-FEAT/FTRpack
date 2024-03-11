@@ -123,7 +123,27 @@ export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefi
       Obj_propD[['MinimumThreshold']]<--69
 
       # export by cells
-      exportcells <- file.path(CONV_export, paste(EvName, freq, "0.5nmi_10m_cells.csv", sep="_"))
+      #exportcells <- file.path(CONV_export, paste(EvName, freq, "0.5nmi_10m_cells.csv", sep="_"))
+      #use standard survey naming conventions
+      Temp<-strsplit(EvName,'x')
+      #special case for 2011
+      if (DirTableSurvey$Survey_num==201103){
+           Tr<-as.numeric(gsub(".*?([0-9]+).*", "\\1", Temp))
+           if (EvName=="x0.3hake69"){ Tr<-0.3}
+           if (EvName=="x0.5hake69"){ Tr<-0.5}
+           if (EvName=="x0.7hake69"){ Tr<-0.7}
+      } else{
+           Tr<-as.numeric(gsub(".*?([0-9]+).*", "\\1", Temp))
+      }
+      V<-paste0('V',DirTableSurvey$Ship_num)  #vessel number;  %insert Canadian vessel as second
+      S<-paste0('S',DirTableSurvey$Survey_num) #survey number  %also CAN
+      X<-paste0('X',DirTableSurvey$Transducer_num) #(['X1-']);  #transducer number  %also CAN
+      F<-c('F38') #frequency
+      T<-paste0('T',Tr)  #transect number
+      Z<-c('Z0-.csv') #%zone
+      Outfname=paste(V,S,X,F,T,Z, sep="-"); #%name of output file with appropriate syntax for MACEBASE
+      #name1<-paste(EvName, freq, "0.5nmi_10m_cells.csv", sep="_")
+      exportcells <- file.path(CONV_export,Outfname)
       varac$ExportIntegrationByRegionsByCellsAll(exportcells)
 
       # Set analysis grid and exclude lines on Sv data back to original values
