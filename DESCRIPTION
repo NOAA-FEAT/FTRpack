@@ -15,5 +15,9 @@ Imports:
     readxl,
     readr, 
     dplyr,
-    janitor
+    janitor,
+    ggplot2, 
+    flextable, 
+    DescTools,
+    data.table
 RoxygenNote: 7.2.3

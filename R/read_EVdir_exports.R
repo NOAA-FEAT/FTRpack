@@ -67,7 +67,7 @@ else if(database==1){#database format
      temp <- dplyr::inner_join(CONV_10m_combine_cells, CONV_10m_combine_intervals, by=c("Process_ID","Interval"))
      temp <- dplyr::inner_join(temp, CONV_10m_combine_layers, by=c("Process_ID","Layer"))
      CONV_10m_join<- dplyr::inner_join(temp, CONV_10m_combine_analysis, by="Process_ID")
-     CONV_10m_join$Transect <- sapply(strsplit(CONV_10m_join$filename.x,"_", fixed = TRUE),`[`,1)
+     CONV_10m_join$Transect <- sapply(strsplit(CONV_10m_join$filename.x,"-", fixed = TRUE),`[`,5) #https://stackoverflow.com/questions/31235165/sapply-with-strsplit-in-r
      CONV_10m_join$ID <- paste(CONV_10m_join$Transect,CONV_10m_join$Interval, sep="_")
      CONV_10m_join$Survey <- paste(SurveyName)
      CONV_10m_join$Transect<-as.numeric(gsub(".*?([0-9]+).*", "\\1", CONV_10m_join$Transect))  #Make into the transect number itself (e.g. 1 instead of x1)
