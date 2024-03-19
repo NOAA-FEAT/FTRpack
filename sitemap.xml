@@ -13,7 +13,13 @@
     <loc>https://noaa-feat.github.io/FTRpack/index.html</loc>
   </url>
   <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/Check_EV_Properties.html</loc>
+  </url>
+  <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/SetExpParamsFun.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/basic_comps.html</loc>
   </url>
   <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/export_integration_EV.html</loc>
