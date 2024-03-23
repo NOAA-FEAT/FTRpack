@@ -18,14 +18,14 @@
 #' want to use. This defaults to the first sheet if not set.
 
 #' @export
-export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefile=NA,ni=1,gdepth=10,database=1,sheet,...) {
+export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefile=NA,ni=1,gdepth=10,database=1,sheet,datedir=1,...) {
 
   ###############################################
   #----------------  INPUT  --------------------#
   ###############################################
 
   DirTable <- readxl::read_excel(DirNameFile,sheet)
-  DirTableSurvey<- subset(DirTable, Survey == SurveyName)
+  DirTableSurvey<- subset(DirTable, Survey == Survey_Name)
   DirTableSurvey[] <- lapply(DirTableSurvey, function(x) if(is.factor(x)) factor(x) else x)  #to ensure dataframe actually removed other variables in subset
 
   #setup folders to read in data
@@ -33,11 +33,15 @@ export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefi
   CONV_EV<-DirTableSurvey$Post_EV_Dir
 
   CONV_exportbase<-DirTableSurvey$Export_Dir
-  # Create when redoing exports, so originals don't get overwritten
-  date_exportdir<-format(Sys.time(),"%Y%m%d")
-  suppressWarnings(dir.create(file.path(CONV_exportbase,date_exportdir)))
-  CONV_export<-file.path(CONV_exportbase, date_exportdir)
-  suppressWarnings(dir.create(file.path(CONV_export)))
+  if (datedir==0){
+       CONV_export<-CONV_exportbase #don't use a date sub-directory
+  }else{
+       # Create a separate date sub-directory when redoing exports, so originals don't get overwritten
+       date_exportdir<-format(Sys.time(),"%Y%m%d")
+       suppressWarnings(dir.create(file.path(CONV_exportbase,date_exportdir)))
+       CONV_export<-file.path(CONV_exportbase, date_exportdir)
+       suppressWarnings(dir.create(file.path(CONV_export)))
+  }
 
   vars <- data.frame(variables,stringsAsFactors = FALSE)
   # for(v in 1:nrow(vars)){
