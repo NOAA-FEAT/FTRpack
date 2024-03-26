@@ -35,6 +35,11 @@ This defaults to 1 (all EV files)}
 \item{sheet}{is an optional argument to denote which sheet of the DirNameFile
 want to use. This defaults to the first sheet if not set.}
 
+\item{datedir}{Flag to state whether to create and use a separate date
+sub-directory when redoing exports, so originals don't get overwritten. This
+defaults to using a date sub-directory (datedir=1 is default; make date directory.
+datedir=0 does not create a sub-directory)}
+
 \item{SurveyName}{name of survey as in excel file}
 }
 \description{
