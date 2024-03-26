@@ -16,7 +16,11 @@
 #' @param database is an optional argument for export format.  Default is database (1).  Spreadsheet =0
 #' @param sheet is an optional argument to denote which sheet of the DirNameFile
 #' want to use. This defaults to the first sheet if not set.
-
+#' @param datedir  Flag to state whether to create and use a separate date
+#' sub-directory when redoing exports, so originals don't get overwritten. This
+#' defaults to using a date sub-directory (datedir=1 is default; make date directory.
+#' datedir=0 does not create a sub-directory)
+#'
 #' @export
 export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefile=NA,ni=1,gdepth=10,database=1,sheet,datedir=1,...) {
 
@@ -52,8 +56,8 @@ export_integration_EV <- function(Survey_Name, DirNameFile,variables,paramnamefi
 
   #list the EV files to integrate
 
-  EVfile.list <- list.files(file.path(CONV_EV), pattern = ".EV")
-
+  #EVfile.list <- list.files(file.path(CONV_EV), pattern = ".EV")
+  EVfile.list <- list.files(file.path(CONV_EV), pattern="*.(?i)EV$")
   # # create folder in Exports for each variable
   # for(f in variables){
   #   suppressWarnings(dir.create(file.path(CONV_export, f)))
