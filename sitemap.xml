@@ -22,12 +22,18 @@
     <loc>https://noaa-feat.github.io/FTRpack/reference/export_integration_EV.html</loc>
   </url>
   <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/getTnumv1.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/getTnumv2.html</loc>
+  </url>
+  <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/read_EVdir_exports.html</loc>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/read_csv_addflnm.html</loc>
   </url>
   <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/read_csv_addflnm.html</loc>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/repath_EVdir_flex.html</loc>
   </url>
 </urlset>
