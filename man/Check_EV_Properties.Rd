@@ -4,7 +4,7 @@
 \alias{Check_EV_Properties}
 \title{Check_EV_Properties.R}
 \usage{
-Check_EV_Properties(SurveyName, DirNameFile, variables, sheet = case)
+Check_EV_Properties(SurveyName, DirNameFile, variables, sheet = case, Xnum = 2)
 }
 \arguments{
 \item{SurveyName}{name of survey as in excel file}
@@ -16,12 +16,16 @@ Check_EV_Properties(SurveyName, DirNameFile, variables, sheet = case)
 \item{sheet}{is an optional argument to denote which sheet of the DirNameFile
 want to use. This defaults to the first sheet if not set.}
 
+\item{Xnum}{- the transducer number.  Defaults to 2 (which is often 38 kHz)}
+
 \item{database}{is an optional argument for export format.  Default is database (1).  Spreadsheet =0}
 }
 \description{
-Uses COM objects to run Echoview and get transducer properties.  These properties are 
+Uses COM objects to run Echoview and get transducer properties.  These properties are
 saved to a .csv file in the Data_Compile_dir of the DirNameFile excel spreadsheet. The name defaults
 to TransducerConfigCheck(SurveyName).csv
+This works for EV files that have an ek5 sub-directory too.
+The ek5 subdirectory must be named 'ek5 EV'
 }
 \examples{
  \dontrun{
