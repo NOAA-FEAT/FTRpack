@@ -74,7 +74,8 @@ else if(database==1){#database format
      CONV_10m_join$Transect <- sapply(strsplit(CONV_10m_join$filename.x,"-", fixed = TRUE),`[`,5) #https://stackoverflow.com/questions/31235165/sapply-with-strsplit-in-r
      CONV_10m_join$ID <- paste(CONV_10m_join$Transect,CONV_10m_join$Interval, sep="_")
      CONV_10m_join$Survey <- paste(SurveyName)
-     CONV_10m_join$Transect<-as.numeric(gsub(".*?([0-9]+).*", "\\1", CONV_10m_join$Transect))  #Make into the transect number itself (e.g. 1 instead of x1)
+     #CONV_10m_join$Transect<-as.numeric(gsub(".*?([0-9]+).*", "\\1", CONV_10m_join$Transect))  #Make into the transect number itself (e.g. 1 instead of x1)
+     CONV_10m_join$Transect<-as.numeric(gsub("T", "", CONV_10m_join$Transect))  #Take out T #Make into the transect number itself (e.g. 1 instead of x1)
      C_join=as.data.frame(CONV_10m_join)  #make into a more conventional dataframe
 
      ## filter data to just return some region_classes
