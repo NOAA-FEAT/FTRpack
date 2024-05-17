@@ -150,6 +150,7 @@ Check_EV_Properties<-function(SurveyName, DirNameFile,variables,sheet=case, Xnum
      names(ducer_locations)[11] <- "TsGain"
      names(ducer_locations)[12] <- "SaCorrection"
      ducer_locations
-
-     write.csv(ducer_locations, paste0(ExportPath,"/TransducerConfigCheck",SurveyName,".csv"),row.names = FALSE)
+     fname<-paste0(ExportPath,"/TransducerConfigCheck",SurveyName,"_",sheet,".csv")
+     print(fname)
+     write.csv(ducer_locations,fname ,row.names = FALSE)
 }
