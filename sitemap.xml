@@ -16,7 +16,19 @@
     <loc>https://noaa-feat.github.io/FTRpack/reference/Check_EV_Properties.html</loc>
   </url>
   <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/Read_Reports.html</loc>
+  </url>
+  <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/SetExpParamsFun.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/basic_BM_comps.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/basic_comps.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/basic_comps_mult.html</loc>
   </url>
   <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/export_integration_EVdir.html</loc>
@@ -35,6 +47,12 @@
   </url>
   <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/read_csv_addflnm.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/read_proc_reports.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/read_spat_unkriged_reports.html</loc>
   </url>
   <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/repath_EVdir_flex.html</loc>
