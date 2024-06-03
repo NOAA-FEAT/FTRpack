@@ -77,7 +77,7 @@ else if(database==1){#database format
      #CONV_10m_join$Transect<-as.numeric(gsub(".*?([0-9]+).*", "\\1", CONV_10m_join$Transect))  #Make into the transect number itself (e.g. 1 instead of x1)
      CONV_10m_join$Transect<-as.numeric(gsub("T", "", CONV_10m_join$Transect))  #Take out T #Make into the transect number itself (e.g. 1 instead of x1)
      C_join=as.data.frame(CONV_10m_join)  #make into a more conventional dataframe
-
+     C_join$Region_class <- removeQuotes(C_join$Region_class) #uses private function below to get rid of any quotes in the region classes
      ## filter data to just return some region_classes
      #hakeflag: -1, don't filter for hake, 0 age-0 hake, 1 = filter for age-1, 2 = filter for age-2+, 3=all hake
      if (hakeflag==-1){  #don't do anything
@@ -95,4 +95,6 @@ else if(database==1){#database format
      }
 }
 
+
+removeQuotes <- function(x) gsub("\"", "", x)
 
