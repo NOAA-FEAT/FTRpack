@@ -19,6 +19,9 @@
     <loc>https://noaa-feat.github.io/FTRpack/reference/Read_Reports.html</loc>
   </url>
   <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/Read_Reports_cross.html</loc>
+  </url>
+  <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/SetExpParamsFun.html</loc>
   </url>
   <url>
@@ -50,6 +53,9 @@
   </url>
   <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/read_proc_reports.html</loc>
+  </url>
+  <url>
+    <loc>https://noaa-feat.github.io/FTRpack/reference/read_proc_reports_abund.html</loc>
   </url>
   <url>
     <loc>https://noaa-feat.github.io/FTRpack/reference/read_spat_unkriged_reports.html</loc>
