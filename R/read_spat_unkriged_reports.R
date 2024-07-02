@@ -7,20 +7,20 @@
 #'  Export_dir as the directory that the exported files are in.
 #' @param sheet is an optional argument to denote which sheet of the DirNameFile
 #' want to use. This defaults to the first sheet if not set.
-#' @param hakeflag. adult hake (hakeflag=2), not filtering for hake (hakeflag=-1), 
-#' age-0 hake (hakeflag=0), age-1 hake only (hakeflag=1), all hake (hakeflag=3), age-1+ (hakeflag=4).  
+#' @param hakeflag. adult hake (hakeflag=2), not filtering for hake (hakeflag=-1),
+#' age-0 hake (hakeflag=0), age-1 hake only (hakeflag=1), all hake (hakeflag=3), age-1+ (hakeflag=4).
 #' @examples
-#' temp<-read_proc_reports(SurveyName, DirNameFile,sheet)
+#' temp<-read_spat_unkriged_reports(SurveyName, DirNameFile,sheet,hakeflag=2)
 #'
 #' @export
 #'
 
 read_spat_unkriged_reports<-function(SurveyName, DirNameFile,sheet=NULL,hakeflag=2,...){
-     
+
      DirTable <- readxl::read_excel(DirNameFile, sheet)  #load in directories/paths/ltocations
      DirTable_yr<- subset(DirTable, Survey ==SurveyName) #just year of interest
      DirTable_yr[] <- lapply(DirTable_yr, function(x) if(is.factor(x)) factor(x) else x)  #to ensure dataframe actually removed other variables in subset
-     
+
      if (hakeflag==1){
           Colind<-c(6)  #look for these column when age-1
           Agepath<-'Age1+'
@@ -31,11 +31,11 @@ read_spat_unkriged_reports<-function(SurveyName, DirNameFile,sheet=NULL,hakeflag
           Colind<-c(7:25)  #look here for age-2+
           Agepath<-'Age2+'
      }
-     
+
      #setup folders to read in data
      ReportBasePath<-as.character(DirTable_yr$Report_Base_Path[1])
      ReportYearPath<-file.path(ReportBasePath,'Reports',sheet,Agepath)  #sheet is the case in this case
-     
+
      #read in kriged biomass @ age file
      fbase<-c('EchoPro_unkriged_aged_output*0.xlsx')
      fbase<-c("EchoPro_unkriged_aged_output*0\\.xlsx")
