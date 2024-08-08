@@ -28,7 +28,7 @@
 #' repath_EVdir_flex(SurveyName,DirNameFile, ni, sheet)
 #'}
 #' @export
-repath_EVdir_flex <- function(SurveyName, DirNameFile, ni=1,sheet,...) {
+repath_EVdir_flex2 <- function(SurveyName, DirNameFile, ni=1,sheet,...) {
 
 ###
 # uses functions from
