@@ -4,8 +4,11 @@
 <url><loc>https://noaa-feat.github.io/FTRpack/authors.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/index.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/Check_EV_Properties.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/Read_Report_Summaries.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/Read_Report_Summaries_Abund.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/Read_Reports.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/Read_Reports_cross.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/Read_Spat_Unkriged_Reports_cross.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/SetExpParamsFun.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/basic_BM_comps.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/basic_comps.html</loc></url>
@@ -17,6 +20,8 @@
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/read_EVdir_exports.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/read_csv_addflnm.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/read_proc_reports.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/read_proc_reports_abund.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/read_proc_reports_abund_cross.html</loc></url>
 <url><loc>https://noaa-feat.github.io/FTRpack/reference/read_spat_unkriged_reports.html</loc></url>
 </urlset>
 
