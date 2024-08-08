@@ -15,8 +15,8 @@ Export_dir as the directory that the exported files are in.}
 \item{sheet}{is an optional argument to denote which sheet of the DirNameFile
 want to use. This defaults to the first sheet if not set.}
 
-\item{hakeflag:}{adult hake (hakeflag=2), not filtering for hake (hakeflag=-1), 
-age-0 hake (hakeflag=0), age-1 hake only(hakeflag=1), all hake (hakeflag=3), age-1+ (hakeflag=4).  
+\item{hakeflag:}{adult hake (hakeflag=2), not filtering for hake (hakeflag=-1),
+age-0 hake (hakeflag=0), age-1 hake only(hakeflag=1), all hake (hakeflag=3), age-1+ (hakeflag=4).
 set to 1 if want age1+ numbers, set to 0 (or other number) if want age2+.  Defaults to age2+}
 }
 \description{
@@ -24,6 +24,8 @@ Read in report(s) from Matlab biomass estimation from a directory
 and calculate the total survey biomass estimate and biomass by age. Uses readxl
 }
 \examples{
+\dontrun{
 temp<-read_proc_reports(SurveyName, DirNameFile,sheet)
+}
 
 }

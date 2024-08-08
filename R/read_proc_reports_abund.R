@@ -12,8 +12,9 @@
 #' set to 1 if want age1+ numbers, set to 0 (or other number) if want age2+.  Defaults to age2+
 
 #' @examples
+#'  \dontrun{
 #' temp<-read_proc_reports_abund(SurveyName, DirNameFile,sheet, hakeflag)
-#'
+#' }
 #' @export
 #'
 

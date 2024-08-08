@@ -39,6 +39,7 @@ exported from Echoview.   The function preserves the cells by depth.
 Uses packages readxl, readr, purrr, and dplyr.
 }
 \examples{
+\dontrun{
 temp<-read_EV_exports(SurveyName, DirNameFile,database=1,exportloc=1)
-
+}
 }

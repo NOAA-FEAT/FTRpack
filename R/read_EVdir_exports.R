@@ -18,8 +18,9 @@
 #' The default is hakeflag=2, keeping just adult hake.
 #'
 #' @examples
+#' \dontrun{
 #' temp<-read_EV_exports(SurveyName, DirNameFile,database=1,exportloc=1)
-#'
+#' }
 #' @export
 
 read_EVdir_exports<-function(SurveyName, DirNameFile,database=1,exportloc=1,sheet=NULL,hakeflag=2,...){

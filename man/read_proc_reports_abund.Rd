@@ -30,6 +30,7 @@ Read in report(s) from Matlab abundance estimation from a directory
 and calculate the total survey abundance estimate and abundance by age. Uses readxl
 }
 \examples{
+ \dontrun{
 temp<-read_proc_reports_abund(SurveyName, DirNameFile,sheet, hakeflag)
-
+}
 }

@@ -10,7 +10,9 @@
 #' @param hakeflag. adult hake (hakeflag=2), not filtering for hake (hakeflag=-1),
 #' age-0 hake (hakeflag=0), age-1 hake only (hakeflag=1), all hake (hakeflag=3), age-1+ (hakeflag=4).
 #' @examples
+#' \dontrun{
 #' temp<-read_spat_unkriged_reports(SurveyName, DirNameFile,sheet,hakeflag=2)
+#'}
 #'
 #' @export
 #'

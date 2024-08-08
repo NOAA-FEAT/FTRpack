@@ -16,7 +16,9 @@
 #' Cannot read in age-1 biomass for age-2+ method.  Method = 1 is for age-1+ method, method = 2
 #' is for the age-2+ method.
 #' @examples
+#' \dontrun{
 #' temp<-read_proc_reports_cross(SurveyName, DirNameFile,sheet,hakeflag, method)
+#' }
 #'
 #' @export
 #'

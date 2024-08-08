@@ -7,12 +7,14 @@
 #'  Export_dir as the directory that the exported files are in.
 #' @param sheet is an optional argument to denote which sheet of the DirNameFile
 #' want to use. This defaults to the first sheet if not set.
-#' @param hakeflag: adult hake (hakeflag=2), not filtering for hake (hakeflag=-1), 
-#' age-0 hake (hakeflag=0), age-1 hake only(hakeflag=1), all hake (hakeflag=3), age-1+ (hakeflag=4).  
+#' @param hakeflag: adult hake (hakeflag=2), not filtering for hake (hakeflag=-1),
+#' age-0 hake (hakeflag=0), age-1 hake only(hakeflag=1), all hake (hakeflag=3), age-1+ (hakeflag=4).
 #' set to 1 if want age1+ numbers, set to 0 (or other number) if want age2+.  Defaults to age2+
 
 #' @examples
+#' \dontrun{
 #' temp<-read_proc_reports(SurveyName, DirNameFile,sheet)
+#' }
 #'
 #' @export
 #'
@@ -33,7 +35,7 @@ read_proc_reports<-function(SurveyName, DirNameFile,sheet=NULL,hakeflag=2,...){
           Exind<-44  #look here for age-2+
           Agepath<-'Age2+'
      }
-     
+
      #setup folders to read in data
      ReportBasePath<-as.character(DirTable_yr$Report_Base_Path[1])
      ReportYearPath<-file.path(ReportBasePath,'Reports',sheet,Agepath)  #sheet is the case in this case

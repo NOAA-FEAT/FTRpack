@@ -36,6 +36,8 @@ and calculate the total survey abundance estimate and abundance by age. Uses rea
 Is able to read in with separate method (age-1 or age-2+ method) and hakeflag.
 }
 \examples{
+\dontrun{
 temp<-read_proc_reports_cross(SurveyName, DirNameFile,sheet,hakeflag, method)
+}
 
 }

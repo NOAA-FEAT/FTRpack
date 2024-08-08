@@ -29,6 +29,8 @@ Read in report(s) from Matlab biomass estimation from a directory
 and calculate the total survey biomass estimate and biomass by age. Uses readxl
 }
 \examples{
+\dontrun{
 temp<-read_spat_unkriged_reports(SurveyName, DirNameFile,sheet,hakeflag=2)
+}
 
 }
