@@ -2,7 +2,7 @@
 #'
 #' @description Read in report(s) from Matlab kriged abundance estimation from a directory
 #' and calculate the total survey abundance estimate and abundance by age. Uses readxl
-#' Is able to read in with separate method and hakeflag.
+#' Is able to read in with separate method (age-1 or age-2+ method) and hakeflag.
 #'
 #' @param SurveyName - name of survey
 #' @param DirNameFile excel file - contains paths and locations of files. Uses
