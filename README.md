@@ -3,7 +3,7 @@
 # FTRPack <img src="man/figures/logo.png" align="right" style="padding: 10px"/>
 
 This is the FTRPack GitHub repository, R package, and website. This
-package was built and maintained by Rebecca Thomas,
+package was built and maintained by Rebecca Thomas
 <Rebecca.Thomas@noaa.gov>
 
 <!-- Do not edit below. This adds the Disclaimer and NMFS footer. -->
