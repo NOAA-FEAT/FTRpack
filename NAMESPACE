@@ -4,4 +4,7 @@ import(dplyr)
 import(ggplot2)
 import(DescTools)
 import(data.table)
+import(flextable)
+import(readr)
+import(janitor)
 
