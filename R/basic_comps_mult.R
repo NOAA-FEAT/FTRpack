@@ -111,6 +111,6 @@ basic_comps_mult<-function(datalist,compcols,imagedirin,cases,hakeflag,...){
           NotTuY[[k]]<-setdiff(Tu[[1]],Tu[[k]])
      }
      RC<-NA
-     return(list(L,RC,sstable,NotTuX,NotTuY,Per_difftable))  
+     return(list(L,RC,sstable,NotTuX,NotTuY,Per_difftable,dataccat))  
      #return(list(L,RC,sstable,notX,notY,RCind))
 }
