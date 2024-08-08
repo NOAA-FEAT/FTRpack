@@ -1,60 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/404.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/index.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/Check_EV_Properties.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/Read_Reports.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/Read_Reports_cross.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/SetExpParamsFun.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/basic_BM_comps.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/basic_comps.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/basic_comps_mult.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/export_integration_EVdir.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/getTnumv1.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/getTnumv2.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/read_EVdir_exports.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/read_csv_addflnm.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/read_proc_reports.html</loc>
-  </url>
-  <url>
-    <loc>https://noaa-feat.github.io/FTRpack/reference/read_spat_unkriged_reports.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://noaa-feat.github.io/FTRpack/404.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/LICENSE.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/authors.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/index.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/Check_EV_Properties.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/Read_Reports.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/Read_Reports_cross.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/SetExpParamsFun.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/basic_BM_comps.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/basic_comps.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/basic_comps_mult.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/export_integration_EVdir.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/getTnumv1.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/getTnumv2.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/index.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/read_EVdir_exports.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/read_csv_addflnm.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/read_proc_reports.html</loc></url>
+<url><loc>https://noaa-feat.github.io/FTRpack/reference/read_spat_unkriged_reports.html</loc></url>
 </urlset>
+
