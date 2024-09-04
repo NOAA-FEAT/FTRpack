@@ -45,6 +45,7 @@ repath_EVdir_flex2 <- function(SurveyName, DirNameFile, ni=1,sheet,...) {
   BasePath<-DirTableSurvey$Base_Path
   BaseJudgePath<-DirTableSurvey$Orig_EV_Dir
   Post_EV_Dir<-DirTableSurvey$Post_EV_Dir
+  suppressWarnings(dir.create(Post_EV_Dir, recursive=TRUE))
 
   #calibration
   if (DirTableSurvey$Mult_Cal_Flag==0){  #multiple calibration flag off
@@ -82,8 +83,10 @@ repath_EVdir_flex2 <- function(SurveyName, DirNameFile, ni=1,sheet,...) {
   if (EK_flag==1){
        EVlists<-list(EVfile.list,EVfileEK5.list)
        Transectlistdir<-list(Transectdir,TransectEK5dir)
+       SaveFilelistdir<-list(Post_EV_Dir,file.path(DirTableSurvey$Post_EV_Dir, 'ek5 EV')) #list of directories to save files into
        Callist<-list(CALfileName, CALfileName_EK5)
        RAWlist<-list(RAWdir,RAWdir_EK5)
+       suppressWarnings(dir.create(file.path(DirTableSurvey$Post_EV_Dir, 'ek5 EV'), recursive=TRUE))
   }else{
        EVlists<-list(EVfile.list)
        Transectlistdir<-list(Transectdir)
@@ -133,7 +136,7 @@ repath_EVdir_flex2 <- function(SurveyName, DirNameFile, ni=1,sheet,...) {
          print(paste("calibration added: ",add.calibration))
 
          # save EV file
-         EVfile$SaveAs(file.path(Post_EV_Dir,i))
+         EVfile$SaveAs(file.path(SaveFilelistdir[[j]],i))
 
          #close EV file
          EVApp$CloseFile(EVfile)
