@@ -1,4 +1,4 @@
-#' repath_EVdir_flex.R
+#' repath_EVdir_flex2.R
 #'
 #' @description Function to take a directory of EV files and reset the path.
 #' This works for EV files that have an ek5 sub-directory too.
@@ -90,6 +90,7 @@ repath_EVdir_flex2 <- function(SurveyName, DirNameFile, ni=1,sheet,...) {
   }else{
        EVlists<-list(EVfile.list)
        Transectlistdir<-list(Transectdir)
+       SaveFilelistdir<-list(Post_EV_Dir) #list of directories to save files into
        Callist<-list(CALfileName)
        RAWlist<-list(RAWdir)
   }
