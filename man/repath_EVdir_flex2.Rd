@@ -2,7 +2,7 @@
 % Please edit documentation in R/repath_EVdir_flex2.R
 \name{repath_EVdir_flex2}
 \alias{repath_EVdir_flex2}
-\title{repath_EVdir_flex.R}
+\title{repath_EVdir_flex2.R}
 \usage{
 repath_EVdir_flex2(SurveyName, DirNameFile, ni = 1, sheet, ...)
 }

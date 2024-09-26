@@ -109,6 +109,9 @@ repath_EVdir_flex2 <- function(SurveyName, DirNameFile, ni=1,sheet,...) {
          EVfileName <- file.path(ThisTransectdir, i)
          print(EVfileName)
          Transect<-getTnumv2(EVfileName)
+         if (is.na(Transect)){
+              Transect<-getTnumv3(EVfileName)  #try a different method if first method to get transect number doesn't work
+         }
          # open EV file
          EVfile <- EVApp$OpenFile(EVfileName)
 
