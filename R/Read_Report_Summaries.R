@@ -68,7 +68,7 @@ Read_Report_Summaries<-function(repcases, year, reportpath, hakeflag=2) {
                for (k in 1:length(repcases)){
                     reportpath<-file.path(projpathbase,year,'Reports',repcases[[k]],Agepath)
                     repname<-('un-kriged_len_age_biomass_table.xlsx')
-                    UKfulldata1<-readxl::read_excel(file.path(reportpath,repname),sheet='Sheet3')
+                    UKfulldata1<-readxl::read_excel(file.path(reportpath,repname),sheet=3)
                     UKBiom2vec1[k]<-UKfulldata1[Exind,2] #total age2+biomass
                     UKfulldata1list[[k]]<-UKfulldata1
                }
@@ -80,8 +80,8 @@ Read_Report_Summaries<-function(repcases, year, reportpath, hakeflag=2) {
                for (k in 1:length(repcases)){
                     reportpath<-file.path(projpathbase,year,'Reports',repcases[[k]],Agepath)
                     repname<-('un-kriged_len_age_biomass_table.xlsx')
-                    UKfulldata2<-readxl::read_excel(file.path(reportpath,repname),sheet='Sheet3')
-                    UKBiom2vec2[k]<-UKfulldata2[Exind,2] #total age2+biomass
+                    UKfulldata2<-readxl::read_excel(file.path(reportpath,repname),sheet=3)
+                    UKBiom2vec2[k]<-UKfulldata2[Exind,2] #total age2+biomas
                     UKfulldata2list[[k]]<-UKfulldata2
                }
           }else{
