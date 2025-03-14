@@ -41,7 +41,7 @@ Read_Report_Summaries_Abund<-function(SurveyName,DirNameFile,repcases, year, rep
                for (k in 1:length(repcases)){
                     reportpath<-file.path(projpathbase,year,'Reports',repcases[[k]],Agepath)
                     repname<-('kriged_len_age_abundance_table.xlsx')
-                    Kfulldata1<-readxl::read_excel(file.path(reportpath,repname),sheet='Sheet3')
+                    Kfulldata1<-readxl::read_excel(file.path(reportpath,repname),sheet=3)
                     #KBiom2vec1[k]<-Kfulldata1[Exind,2] #total age2+biomass
                     KBiom2vec1[k]<-read_proc_reports_abund_cross(SurveyName,DirNameFile,sheet=repcases[[k]],hakeflag,method)
                     Kfulldata1list[[k]]<-Kfulldata1
@@ -54,7 +54,7 @@ Read_Report_Summaries_Abund<-function(SurveyName,DirNameFile,repcases, year, rep
                for (k in 1:length(repcases)){
                     reportpath<-file.path(projpathbase,year,'Reports',repcases[[k]],Agepath)
                     repname<-('kriged_len_age_abundance_table.xlsx')
-                    Kfulldata2<-readxl::read_excel(file.path(reportpath,repname),sheet='Sheet3')
+                    Kfulldata2<-readxl::read_excel(file.path(reportpath,repname),sheet=3)
                     #KBiom2vec2[k]<-Kfulldata2[Exind,2] #total age2+biomass
                     KBiom2vec2[k]<-read_proc_reports_abund_cross(SurveyName,DirNameFile,sheet=repcases[[k]],hakeflag,method)
                     Kfulldata2list[[k]]<-Kfulldata2
@@ -72,7 +72,7 @@ Read_Report_Summaries_Abund<-function(SurveyName,DirNameFile,repcases, year, rep
                for (k in 1:length(repcases)){
                     reportpath<-file.path(projpathbase,year,'Reports',repcases[[k]],Agepath)
                     repname<-('un-kriged_len_age_abundance_table.xlsx')
-                    UKfulldata1<-readxl::read_excel(file.path(reportpath,repname),sheet='Sheet3')
+                    UKfulldata1<-readxl::read_excel(file.path(reportpath,repname),sheet=3)
                     UKBiom2vec1[k]<-UKfulldata1[Exind,2] #total age2+biomass
                     UKfulldata1list[[k]]<-UKfulldata1
                }
@@ -84,7 +84,7 @@ Read_Report_Summaries_Abund<-function(SurveyName,DirNameFile,repcases, year, rep
                for (k in 1:length(repcases)){
                     reportpath<-file.path(projpathbase,year,'Reports',repcases[[k]],Agepath)
                     repname<-('un-kriged_len_age_abundance_table.xlsx')
-                    UKfulldata2<-readxl::read_excel(file.path(reportpath,repname),sheet='Sheet3')
+                    UKfulldata2<-readxl::read_excel(file.path(reportpath,repname),sheet=3)
                     UKBiom2vec2[k]<-UKfulldata2[Exind,2] #total age2+biomass
                     #UKBiom2vec2[k]<-read_proc_reports_abund_cross(SurveyName,DirNameFile,sheet=repcases[[k]],hakeflag,method)
                     UKfulldata2list[[k]]<-UKfulldata2
